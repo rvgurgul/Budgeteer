@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BudgetApp.xcodeproj">
+      location = "self:/Users/student/Desktop/Mobile Apps Development/Apps/BudgetApp/Budgeteer.xcodeproj">
    </FileRef>
 </Workspace>

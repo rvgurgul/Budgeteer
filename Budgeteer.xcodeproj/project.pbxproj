@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2B46A61CB2BE6F003D617C /* BudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B46A51CB2BE6F003D617C /* BudgetTableViewController.swift */; };
+		3F2B46A81CB2BF41003D617C /* BudgetSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B46A71CB2BF41003D617C /* BudgetSection.swift */; };
+		3F3DB0F41CC5354D00EF95D2 /* BudgetItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DB0F31CC5354D00EF95D2 /* BudgetItemViewController.swift */; };
+		3F3DB0F61CD25E2F00EF95D2 /* InterestCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DB0F51CD25E2F00EF95D2 /* InterestCalculatorViewController.swift */; };
 		3FC2930F1CAD753C00882B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2930E1CAD753C00882B82 /* AppDelegate.swift */; };
-		3FC293111CAD753C00882B82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC293101CAD753C00882B82 /* ViewController.swift */; };
 		3FC293141CAD753C00882B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC293121CAD753C00882B82 /* Main.storyboard */; };
 		3FC293161CAD753C00882B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC293151CAD753C00882B82 /* Assets.xcassets */; };
 		3FC293191CAD753C00882B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC293171CAD753C00882B82 /* LaunchScreen.storyboard */; };
 		3FC293241CAD753C00882B82 /* BudgetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC293231CAD753C00882B82 /* BudgetAppTests.swift */; };
 		3FC2932F1CAD753C00882B82 /* BudgetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2932E1CAD753C00882B82 /* BudgetAppUITests.swift */; };
+		3FC2933D1CAD7CE000882B82 /* BudgetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2933C1CAD7CE000882B82 /* BudgetItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +38,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FC2930B1CAD753C00882B82 /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2B46A51CB2BE6F003D617C /* BudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewController.swift; sourceTree = "<group>"; };
+		3F2B46A71CB2BF41003D617C /* BudgetSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSection.swift; sourceTree = "<group>"; };
+		3F3DB0F31CC5354D00EF95D2 /* BudgetItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetItemViewController.swift; sourceTree = "<group>"; };
+		3F3DB0F51CD25E2F00EF95D2 /* InterestCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCalculatorViewController.swift; sourceTree = "<group>"; };
+		3FC2930B1CAD753C00882B82 /* Budgeteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budgeteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC2930E1CAD753C00882B82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FC293101CAD753C00882B82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FC293131CAD753C00882B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FC293151CAD753C00882B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC293181CAD753C00882B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FC2931A1CAD753C00882B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FC2931F1CAD753C00882B82 /* BudgetAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC2931F1CAD753C00882B82 /* Budgeteer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Budgeteer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC293231CAD753C00882B82 /* BudgetAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetAppTests.swift; sourceTree = "<group>"; };
 		3FC293251CAD753C00882B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FC2932A1CAD753C00882B82 /* BudgetAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC2932A1CAD753C00882B82 /* Budgeteer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Budgeteer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC2932E1CAD753C00882B82 /* BudgetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetAppUITests.swift; sourceTree = "<group>"; };
 		3FC293301CAD753C00882B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC2933C1CAD7CE000882B82 /* BudgetItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +95,9 @@
 		3FC2930C1CAD753C00882B82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FC2930B1CAD753C00882B82 /* BudgetApp.app */,
-				3FC2931F1CAD753C00882B82 /* BudgetAppTests.xctest */,
-				3FC2932A1CAD753C00882B82 /* BudgetAppUITests.xctest */,
+				3FC2930B1CAD753C00882B82 /* Budgeteer.app */,
+				3FC2931F1CAD753C00882B82 /* Budgeteer.xctest */,
+				3FC2932A1CAD753C00882B82 /* Budgeteer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,10 +105,14 @@
 		3FC2930D1CAD753C00882B82 /* BudgetApp */ = {
 			isa = PBXGroup;
 			children = (
-				3FC2930E1CAD753C00882B82 /* AppDelegate.swift */,
-				3FC293101CAD753C00882B82 /* ViewController.swift */,
-				3FC293121CAD753C00882B82 /* Main.storyboard */,
 				3FC293151CAD753C00882B82 /* Assets.xcassets */,
+				3FC2930E1CAD753C00882B82 /* AppDelegate.swift */,
+				3F2B46A51CB2BE6F003D617C /* BudgetTableViewController.swift */,
+				3F3DB0F31CC5354D00EF95D2 /* BudgetItemViewController.swift */,
+				3F2B46A71CB2BF41003D617C /* BudgetSection.swift */,
+				3FC2933C1CAD7CE000882B82 /* BudgetItem.swift */,
+				3F3DB0F51CD25E2F00EF95D2 /* InterestCalculatorViewController.swift */,
+				3FC293121CAD753C00882B82 /* Main.storyboard */,
 				3FC293171CAD753C00882B82 /* LaunchScreen.storyboard */,
 				3FC2931A1CAD753C00882B82 /* Info.plist */,
 			);
@@ -128,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3FC2930A1CAD753C00882B82 /* BudgetApp */ = {
+		3FC2930A1CAD753C00882B82 /* Budgeteer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FC293331CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgetApp" */;
+			buildConfigurationList = 3FC293331CAD753C00882B82 /* Build configuration list for PBXNativeTarget "Budgeteer" */;
 			buildPhases = (
 				3FC293071CAD753C00882B82 /* Sources */,
 				3FC293081CAD753C00882B82 /* Frameworks */,
@@ -140,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = BudgetApp;
+			name = Budgeteer;
 			productName = BudgetApp;
-			productReference = 3FC2930B1CAD753C00882B82 /* BudgetApp.app */;
+			productReference = 3FC2930B1CAD753C00882B82 /* Budgeteer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3FC2931E1CAD753C00882B82 /* BudgetAppTests */ = {
+		3FC2931E1CAD753C00882B82 /* BudgeteerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FC293361CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgetAppTests" */;
+			buildConfigurationList = 3FC293361CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgeteerTests" */;
 			buildPhases = (
 				3FC2931B1CAD753C00882B82 /* Sources */,
 				3FC2931C1CAD753C00882B82 /* Frameworks */,
@@ -158,14 +170,14 @@
 			dependencies = (
 				3FC293211CAD753C00882B82 /* PBXTargetDependency */,
 			);
-			name = BudgetAppTests;
+			name = BudgeteerTests;
 			productName = BudgetAppTests;
-			productReference = 3FC2931F1CAD753C00882B82 /* BudgetAppTests.xctest */;
+			productReference = 3FC2931F1CAD753C00882B82 /* Budgeteer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3FC293291CAD753C00882B82 /* BudgetAppUITests */ = {
+		3FC293291CAD753C00882B82 /* BudgeteerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FC293391CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgetAppUITests" */;
+			buildConfigurationList = 3FC293391CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgeteerUITests" */;
 			buildPhases = (
 				3FC293261CAD753C00882B82 /* Sources */,
 				3FC293271CAD753C00882B82 /* Frameworks */,
@@ -176,9 +188,9 @@
 			dependencies = (
 				3FC2932C1CAD753C00882B82 /* PBXTargetDependency */,
 			);
-			name = BudgetAppUITests;
+			name = BudgeteerUITests;
 			productName = BudgetAppUITests;
-			productReference = 3FC2932A1CAD753C00882B82 /* BudgetAppUITests.xctest */;
+			productReference = 3FC2932A1CAD753C00882B82 /* Budgeteer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3FC293061CAD753C00882B82 /* Build configuration list for PBXProject "BudgetApp" */;
+			buildConfigurationList = 3FC293061CAD753C00882B82 /* Build configuration list for PBXProject "Budgeteer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3FC2930A1CAD753C00882B82 /* BudgetApp */,
-				3FC2931E1CAD753C00882B82 /* BudgetAppTests */,
-				3FC293291CAD753C00882B82 /* BudgetAppUITests */,
+				3FC2930A1CAD753C00882B82 /* Budgeteer */,
+				3FC2931E1CAD753C00882B82 /* BudgeteerTests */,
+				3FC293291CAD753C00882B82 /* BudgeteerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC293111CAD753C00882B82 /* ViewController.swift in Sources */,
+				3FC2933D1CAD7CE000882B82 /* BudgetItem.swift in Sources */,
+				3F2B46A81CB2BF41003D617C /* BudgetSection.swift in Sources */,
+				3F3DB0F41CC5354D00EF95D2 /* BudgetItemViewController.swift in Sources */,
 				3FC2930F1CAD753C00882B82 /* AppDelegate.swift in Sources */,
+				3F3DB0F61CD25E2F00EF95D2 /* InterestCalculatorViewController.swift in Sources */,
+				3F2B46A61CB2BE6F003D617C /* BudgetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +301,12 @@
 /* Begin PBXTargetDependency section */
 		3FC293211CAD753C00882B82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FC2930A1CAD753C00882B82 /* BudgetApp */;
+			target = 3FC2930A1CAD753C00882B82 /* Budgeteer */;
 			targetProxy = 3FC293201CAD753C00882B82 /* PBXContainerItemProxy */;
 		};
 		3FC2932C1CAD753C00882B82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FC2930A1CAD753C00882B82 /* BudgetApp */;
+			target = 3FC2930A1CAD753C00882B82 /* Budgeteer */;
 			targetProxy = 3FC2932B1CAD753C00882B82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -405,7 +421,7 @@
 				INFOPLIST_FILE = BudgetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MobileApps.BudgetApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Budgeteer;
 			};
 			name = Debug;
 		};
@@ -416,7 +432,7 @@
 				INFOPLIST_FILE = BudgetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MobileApps.BudgetApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Budgeteer;
 			};
 			name = Release;
 		};
@@ -427,8 +443,8 @@
 				INFOPLIST_FILE = BudgetAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MobileApps.BudgetAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetApp.app/BudgetApp";
+				PRODUCT_NAME = Budgeteer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budgeteer.app/Budgeteer";
 			};
 			name = Debug;
 		};
@@ -439,8 +455,8 @@
 				INFOPLIST_FILE = BudgetAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MobileApps.BudgetAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetApp.app/BudgetApp";
+				PRODUCT_NAME = Budgeteer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budgeteer.app/Budgeteer";
 			};
 			name = Release;
 		};
@@ -450,7 +466,7 @@
 				INFOPLIST_FILE = BudgetAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MobileApps.BudgetAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Budgeteer;
 				TEST_TARGET_NAME = BudgetApp;
 				USES_XCTRUNNER = YES;
 			};
@@ -462,7 +478,7 @@
 				INFOPLIST_FILE = BudgetAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MobileApps.BudgetAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Budgeteer;
 				TEST_TARGET_NAME = BudgetApp;
 				USES_XCTRUNNER = YES;
 			};
@@ -471,7 +487,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FC293061CAD753C00882B82 /* Build configuration list for PBXProject "BudgetApp" */ = {
+		3FC293061CAD753C00882B82 /* Build configuration list for PBXProject "Budgeteer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FC293311CAD753C00882B82 /* Debug */,
@@ -480,29 +496,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FC293331CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgetApp" */ = {
+		3FC293331CAD753C00882B82 /* Build configuration list for PBXNativeTarget "Budgeteer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FC293341CAD753C00882B82 /* Debug */,
 				3FC293351CAD753C00882B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3FC293361CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgetAppTests" */ = {
+		3FC293361CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgeteerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FC293371CAD753C00882B82 /* Debug */,
 				3FC293381CAD753C00882B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3FC293391CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgetAppUITests" */ = {
+		3FC293391CAD753C00882B82 /* Build configuration list for PBXNativeTarget "BudgeteerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FC2933A1CAD753C00882B82 /* Debug */,
 				3FC2933B1CAD753C00882B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

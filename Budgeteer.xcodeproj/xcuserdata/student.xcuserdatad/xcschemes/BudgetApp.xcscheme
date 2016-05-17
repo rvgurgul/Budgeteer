@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FC2930A1CAD753C00882B82"
-               BuildableName = "BudgetApp.app"
-               BlueprintName = "BudgetApp"
-               ReferencedContainer = "container:BudgetApp.xcodeproj">
+               BuildableName = "Budgeteer.app"
+               BlueprintName = "Budgeteer"
+               ReferencedContainer = "container:Budgeteer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FC2931E1CAD753C00882B82"
-               BuildableName = "BudgetAppTests.xctest"
-               BlueprintName = "BudgetAppTests"
-               ReferencedContainer = "container:BudgetApp.xcodeproj">
+               BuildableName = "Budgeteer.xctest"
+               BlueprintName = "BudgeteerTests"
+               ReferencedContainer = "container:Budgeteer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3FC293291CAD753C00882B82"
-               BuildableName = "BudgetAppUITests.xctest"
-               BlueprintName = "BudgetAppUITests"
-               ReferencedContainer = "container:BudgetApp.xcodeproj">
+               BuildableName = "Budgeteer.xctest"
+               BlueprintName = "BudgeteerUITests"
+               ReferencedContainer = "container:Budgeteer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FC2930A1CAD753C00882B82"
-            BuildableName = "BudgetApp.app"
-            BlueprintName = "BudgetApp"
-            ReferencedContainer = "container:BudgetApp.xcodeproj">
+            BuildableName = "Budgeteer.app"
+            BlueprintName = "Budgeteer"
+            ReferencedContainer = "container:Budgeteer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FC2930A1CAD753C00882B82"
-            BuildableName = "BudgetApp.app"
-            BlueprintName = "BudgetApp"
-            ReferencedContainer = "container:BudgetApp.xcodeproj">
+            BuildableName = "Budgeteer.app"
+            BlueprintName = "Budgeteer"
+            ReferencedContainer = "container:Budgeteer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3FC2930A1CAD753C00882B82"
-            BuildableName = "BudgetApp.app"
-            BlueprintName = "BudgetApp"
-            ReferencedContainer = "container:BudgetApp.xcodeproj">
+            BuildableName = "Budgeteer.app"
+            BlueprintName = "Budgeteer"
+            ReferencedContainer = "container:Budgeteer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

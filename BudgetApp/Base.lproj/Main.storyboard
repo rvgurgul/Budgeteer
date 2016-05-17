@@ -1,25 +1,334 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xgo-an-fO2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Budget Table View Controller-->
+        <scene sceneID="mAo-Qz-D5T">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="FAo-be-QHZ" customClass="BudgetTableViewController" customModule="Budgeteer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4Vh-2m-jo0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.49803921569999998" green="1" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.62582478720000001" green="1" blue="0.78584306869999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.62582478720000001" green="1" blue="0.78584306869999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mJs-tT-lAf">
+                            <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.33333333329999998" green="1" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="NdL-Qq-T6j"/>
+                                <barButtonItem title="More" id="czY-Sn-iNl">
+                                    <color key="tintColor" red="0.33333333329999998" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="moreToolsButtonTap:" destination="FAo-be-QHZ" id="e31-xE-JNG"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="TJ9-qG-PAs"/>
+                            </items>
+                            <color key="tintColor" red="0.33333333329999998" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="barTintColor" red="0.62582478720000001" green="1" blue="0.78584306869999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </toolbar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="budgetItem" textLabel="jtc-If-d86" detailTextLabel="Igc-kA-NRr" style="IBUITableViewCellStyleValue1" id="meA-xa-iGX">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="meA-xa-iGX" id="BaC-Mz-cVC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jtc-If-d86">
+                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Igc-kA-NRr">
+                                            <rect key="frame" x="543" y="12" width="42" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.62582478720000001" green="1" blue="0.78584306869999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.62582478720000001" green="1" blue="0.78584306869999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="HW2-nF-3H6" kind="show" identifier="toDetailedView" id="JQh-DZ-c2G"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FAo-be-QHZ" id="4fY-q9-xvl"/>
+                            <outlet property="delegate" destination="FAo-be-QHZ" id="JKR-B2-PSn"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="edw-Uv-TSD">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Add" id="ktr-Tf-QE5">
+                            <color key="tintColor" red="0.33333333329999998" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addBudgetItem:" destination="FAo-be-QHZ" id="VlM-CS-nTg"/>
+                            </connections>
+                        </barButtonItem>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Monthly Income" textAlignment="center" minimumFontSize="17" id="aA7-le-Nd0">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            <connections>
+                                <outlet property="delegate" destination="FAo-be-QHZ" id="lUe-KK-Dva"/>
+                            </connections>
+                        </textField>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="monthlyIncomeField" destination="aA7-le-Nd0" id="iRL-cG-Uvv"/>
+                        <segue destination="UuV-4L-xqt" kind="show" identifier="toInterestCalculator" id="pBu-PF-8WK"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRq-bU-Rzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3571" y="331"/>
+        </scene>
+        <!--Interest Calculator View Controller-->
+        <scene sceneID="xfT-Gv-leO">
+            <objects>
+                <viewController id="UuV-4L-xqt" customClass="InterestCalculatorViewController" customModule="Budgeteer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kNB-kM-aqU"/>
+                        <viewControllerLayoutGuide type="bottom" id="vxv-JA-3l9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SyQ-cM-PRr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Initial Investment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-KD-fbq">
+                                <rect key="frame" x="151" y="96" width="299" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UuV-4L-xqt" id="ubW-0g-Hsv"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Interest Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYn-ri-OXE">
+                                <rect key="frame" x="151" y="134" width="299" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UuV-4L-xqt" id="Blv-Sz-ZZa"/>
+                                </connections>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="fmR-gK-Jcn">
+                                <rect key="frame" x="149" y="172" width="303" height="31"/>
+                                <color key="tintColor" red="0.33333333333333331" green="0.66666666666666663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="interestRateChanged:" destination="UuV-4L-xqt" eventType="valueChanged" id="Bvl-7U-lBa"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPw-FR-hQ9">
+                                <rect key="frame" x="151" y="210" width="299" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Times Compounded" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-fd-oBp">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="UuV-4L-xqt" id="fz5-ON-OBE"/>
+                                        </connections>
+                                    </textField>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="365" translatesAutoresizingMaskIntoConstraints="NO" id="Vsh-Iu-Mz2">
+                                        <rect key="frame" x="205" y="0.0" width="94" height="29"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.49803921569999998" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="timesCompoundedChanged:" destination="UuV-4L-xqt" eventType="valueChanged" id="e5m-VA-6pF"/>
+                                        </connections>
+                                    </stepper>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pa-C8-6Wr">
+                                        <rect key="frame" x="0.0" y="38" width="197" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="UuV-4L-xqt" id="ifH-Nh-uk3"/>
+                                        </connections>
+                                    </textField>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="GxS-Sl-UEn">
+                                        <rect key="frame" x="205" y="39" width="94" height="29"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.49803921569999998" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="yearsCompoundedChanged:" destination="UuV-4L-xqt" eventType="valueChanged" id="QZY-vQ-axW"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Final Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-cj-Bxo">
+                                <rect key="frame" x="151" y="286" width="299" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gih-IR-YIp">
+                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Vxl-6L-tUr"/>
+                                    <barButtonItem title="Clear" id="1jH-9H-h7X">
+                                        <connections>
+                                            <action selector="clearEntriesButtonTap:" destination="UuV-4L-xqt" id="l3x-Ut-Nq9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qKB-qY-1mA"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62582478720000001" green="1" blue="0.78584306869999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.49803921569999998" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Zm-KD-fbq" firstAttribute="centerX" secondItem="SyQ-cM-PRr" secondAttribute="centerX" id="6TO-fN-ouB"/>
+                            <constraint firstItem="fmR-gK-Jcn" firstAttribute="centerX" secondItem="SyQ-cM-PRr" secondAttribute="centerX" id="GnA-4U-3dP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gih-IR-YIp" secondAttribute="trailing" constant="-20" id="Ick-Qv-GdW"/>
+                            <constraint firstItem="gih-IR-YIp" firstAttribute="leading" secondItem="SyQ-cM-PRr" secondAttribute="leadingMargin" constant="-20" id="a7B-pl-moI"/>
+                            <constraint firstItem="sYn-ri-OXE" firstAttribute="centerX" secondItem="SyQ-cM-PRr" secondAttribute="centerX" id="ehd-Qq-1kn"/>
+                            <constraint firstItem="cxo-cj-Bxo" firstAttribute="centerX" secondItem="SyQ-cM-PRr" secondAttribute="centerX" id="pug-of-JtG"/>
+                            <constraint firstItem="vxv-JA-3l9" firstAttribute="top" secondItem="gih-IR-YIp" secondAttribute="bottom" id="yEe-NE-jOp"/>
+                            <constraint firstItem="dPw-FR-hQ9" firstAttribute="centerX" secondItem="SyQ-cM-PRr" secondAttribute="centerX" id="zqx-nn-icr"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="finalAmountField" destination="cxo-cj-Bxo" id="OWJ-oq-Bw7"/>
+                        <outlet property="interestRateField" destination="sYn-ri-OXE" id="qGb-my-ehJ"/>
+                        <outlet property="interestRateSlider" destination="fmR-gK-Jcn" id="D4i-8o-o8O"/>
+                        <outlet property="principalField" destination="3Zm-KD-fbq" id="CYX-4F-zeL"/>
+                        <outlet property="timesCompoundedField" destination="eHM-fd-oBp" id="En3-p4-LVR"/>
+                        <outlet property="timesCompoundedStepper" destination="Vsh-Iu-Mz2" id="BwM-eF-EoU"/>
+                        <outlet property="yearsCompoundedField" destination="3pa-C8-6Wr" id="RBE-50-vEH"/>
+                        <outlet property="yearsCompoundedStepper" destination="GxS-Sl-UEn" id="Ckn-Md-kc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7l-HI-bmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4277" y="1111"/>
+        </scene>
+        <!--Budget Item View Controller-->
+        <scene sceneID="hJH-bN-Buw">
+            <objects>
+                <viewController id="HW2-nF-3H6" customClass="BudgetItemViewController" customModule="Budgeteer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f5p-Wj-O6F"/>
+                        <viewControllerLayoutGuide type="bottom" id="otf-lZ-Caj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e67-oZ-QDd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PK-k8-7Bt">
+                                <rect key="frame" x="20" y="114" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="High" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMT-1R-SE0">
+                                <rect key="frame" x="538" y="114" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chosen Percent" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZb-fA-Xb6">
+                                <rect key="frame" x="180" y="148" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HW2-nF-3H6" id="nlv-Qs-I57"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Allocated Income" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAe-SA-sDr">
+                                <rect key="frame" x="180" y="72" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HW2-nF-3H6" id="Pbd-Lv-RrN"/>
+                                </connections>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-AI-Y6Y">
+                                <rect key="frame" x="68" y="110" width="464" height="31"/>
+                                <color key="tintColor" red="0.33333333329999998" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onSliderValueChange:" destination="HW2-nF-3H6" eventType="valueChanged" id="APr-kA-ClO"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62582478720000001" green="1" blue="0.78584306869999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lfE-AI-Y6Y" firstAttribute="leading" secondItem="9PK-k8-7Bt" secondAttribute="trailing" constant="5" id="1b4-zx-cV0"/>
+                            <constraint firstItem="IMT-1R-SE0" firstAttribute="leading" secondItem="lfE-AI-Y6Y" secondAttribute="trailing" constant="5" id="4O0-8i-J4s"/>
+                            <constraint firstItem="9PK-k8-7Bt" firstAttribute="leading" secondItem="e67-oZ-QDd" secondAttribute="leadingMargin" constant="5" id="V1l-tR-Be9"/>
+                            <constraint firstItem="lfE-AI-Y6Y" firstAttribute="leading" secondItem="9PK-k8-7Bt" secondAttribute="trailing" constant="5" id="nO7-hO-ZYZ"/>
+                            <constraint firstItem="IMT-1R-SE0" firstAttribute="leading" secondItem="lfE-AI-Y6Y" secondAttribute="trailing" constant="5" id="o7q-iW-03Z"/>
+                            <constraint firstItem="MAe-SA-sDr" firstAttribute="centerX" secondItem="e67-oZ-QDd" secondAttribute="centerX" id="pMr-VC-IcE"/>
+                            <constraint firstItem="RZb-fA-Xb6" firstAttribute="centerX" secondItem="e67-oZ-QDd" secondAttribute="centerX" id="xQc-VQ-oYR"/>
+                            <constraint firstItem="IMT-1R-SE0" firstAttribute="trailing" secondItem="e67-oZ-QDd" secondAttribute="trailingMargin" constant="5" id="ykw-z9-nCq"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mo6-gC-TYA" userLabel="Navigation Item">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expense Name" textAlignment="center" minimumFontSize="17" id="bBk-7I-MCd">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            <connections>
+                                <outlet property="delegate" destination="HW2-nF-3H6" id="Yo8-Lu-CBV"/>
+                            </connections>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" image="unlocked" id="wfS-6o-ecx">
+                            <color key="tintColor" red="0.33333333329999998" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="lockItem:" destination="HW2-nF-3H6" id="8gu-6C-wJm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="allocatedIncomeField" destination="MAe-SA-sDr" id="g5Q-9I-4Cg"/>
+                        <outlet property="allocatedIncomeSlider" destination="lfE-AI-Y6Y" id="G36-Y3-M0i"/>
+                        <outlet property="chosenPercentField" destination="RZb-fA-Xb6" id="XQE-wF-Etq"/>
+                        <outlet property="expenseNameField" destination="bBk-7I-MCd" id="esL-ts-DGa"/>
+                        <outlet property="lockValuesButton" destination="wfS-6o-ecx" id="qwn-rz-EUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9j-b2-1pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4277" y="331"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="daE-l4-WRd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xgo-an-fO2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AZp-Gi-jqk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FAo-be-QHZ" kind="relationship" relationship="rootViewController" id="6FN-rx-77c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5t-wQ-hW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759" y="331"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="unlocked" width="64" height="64"/>
+    </resources>
 </document>
